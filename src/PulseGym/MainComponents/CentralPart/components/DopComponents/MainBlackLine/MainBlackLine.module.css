@@ -1,0 +1,57 @@
+.blackLine {
+  width: 100%;
+  /* height: 100px; */
+  background-color: rgb(119, 119, 118);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0 0 50px 50px;
+}
+
+.LaskavoProsimo {
+  font-size: 50px;
+  color: white;
+}
+.pulsGym {
+  font-size: 90px;
+  color: white;
+}
+.wrapTreeImgText {
+  display: flex;
+  justify-content: space-around;
+}
+.wrapTreeImgText span {
+  width: 200px;
+  color: white;
+  display: flex;
+  /* justify-content: flex; */
+}
+.wrapImg img {
+  width: 50px;
+  height: 50px;
+}
+.textAfterStar {
+  width: 200px;
+  color: white;
+  /* display: flex; */
+  /* justify-content: flex-start; */
+}
+.wrapStar img {
+  width: 30px;
+  height: 30px;
+}
+.wrapBtnLink {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.wrapBtnLink button {
+  background-color: orange;
+  width: 160px;
+  height: 50px;
+}
+.link {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+}

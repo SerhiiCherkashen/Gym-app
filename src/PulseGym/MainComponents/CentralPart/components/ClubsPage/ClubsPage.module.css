@@ -1,0 +1,47 @@
+/* .text {
+  background-color: aqua;
+} */
+.clubsPage {
+  /* height: 700px;Ы */
+  background-color: rgb(183, 236, 225);
+}
+.gyms {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1460px;
+  padding: 20px;
+  /* background-color: rgb(78, 50, 205); */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  /* flex-wrap: wrap; */
+}
+.oneGym {
+  text-decoration: none;
+  width: 300px;
+  /* height: 400px; */
+  /* background-color: sandybrown; */
+  /* margin: 30px; */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: flex-start;
+}
+.peopleName {
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.address {
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.oneGym img {
+  width: 100%;
+  height: 200px;
+  border-radius: 30px;
+}

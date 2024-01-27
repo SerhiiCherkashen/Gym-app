@@ -1,0 +1,37 @@
+.wrapMapText {
+  display: flex;
+  justify-content: space-evenly;
+}
+.text {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+.address {
+  /* background-color: aqua; */
+  font-size: 15px;
+  font-weight: 500;
+  text-align: start;
+}
+.wrapMapText img {
+  width: 30px;
+  height: 30px;
+}
+.wrapImgText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7px;
+}
+.wrapColumn {
+  width: 270px;
+  /* background-color: darkcyan; */
+  display: flex;
+  flex-direction: column;
+}
+.HAddress {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
