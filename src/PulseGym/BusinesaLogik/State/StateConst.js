@@ -2,9 +2,32 @@ import { stateImage } from "./StateImage";
 
 export const stateConst = {
   stateImage: stateImage,
+  whyExactly: [
+    {
+      image: stateImage.geo,
+      text: "Удобное расположение наших клубов",
+    },
+    {
+      image: stateImage.chair,
+      text: " Комфортные раздевалки и зона отдыха",
+    },
+    {
+      image: stateImage.dumbbell,
+      text: "Современное профессиональное оборудование",
+    },
+    {
+      image: stateImage.dollar,
+      text: "Доступные цены для каждого гостя",
+    },
+    {
+      image: stateImage.profile,
+      text: "Индивидуальный подход к каждому клиенту",
+    },
+  ],
   gyms: [
     {
       id: "0holodka",
+      coordinates: [50.006, 36.229],
       image: stateImage.gym,
       peopleName: "ХОЛОДНА ГОРА АТЛАС",
       address: "ВУЛ. ПОЛТАВСЬКИЙ ШЛЯХ 146 ТЦ АТЛАС",
@@ -24,6 +47,7 @@ export const stateConst = {
     },
     {
       id: "1masela",
+      coordinates: [50.2, 36.3],
       image: stateImage.gym2,
       peopleName: "НА МФСЕЛЬСКОГО",
       address: "ПР-Т. ГЕРОЇВ ХАРКОВА, 273-К",
@@ -48,6 +72,7 @@ export const stateConst = {
     },
     {
       id: "2oleksiivka",
+      coordinates: [49.95, 36.01],
       image: stateImage.gym3,
       peopleName: "НА ОЛЕКСIIВЦI",
       address: "ПРОСПЕКТ ЛЮДВІГА СВОБОДИ, 29",
@@ -70,102 +95,102 @@ export const stateConst = {
       ],
       sportBar: true,
     },
-    // {
-    //   id: "3602mkp",
-    //   image: stateImage.gym4,
-    //   peopleName: "НА 602-МРН",
-    //   address: "ВУЛ. АМОСОВА, 36-А",
-    //   modeOfOperation: "asdasd",
-    //   telephone: "123123",
-    //   services: [
-    //     "Тренажерний зал",
-    //     "Фітнес",
-    //     "Спорт бар",
-    //     "Стретчінг",
-    //     "Фітнес-мікс",
-    //     "Salsation",
-    //   ],
-    //   coaches: [
-    //     {
-    //       name: "asd asd",
-    //       tel: "123123",
-    //       description: "text",
-    //     },
-    //   ],
-    //   sportBar: true,
-    // },
-    // {
-    //   id: "4htz",
-    //   image: stateImage.gym5,
-    //   peopleName: "НА ХТЗ",
-    //   address: "ПР-Т. ОЛЕКСАНДРІВСЬКИЙ, 99",
-    //   modeOfOperation: "asdasd",
-    //   telephone: "123123",
-    //   services: [
-    //     "Тренажерний зал",
-    //     "Фітнес",
-    //     "Спорт бар",
-    //     "Стретчінг",
-    //     "Фітнес-мікс",
-    //     "Salsation",
-    //   ],
-    //   coaches: [
-    //     {
-    //       name: "asd asd",
-    //       tel: "123123",
-    //       description: "text",
-    //     },
-    //   ],
-    //   sportBar: true,
-    // },
-    // {
-    //   id: "5oleksa1",
-    //   image: stateImage.gym3,
-    //   peopleName: "НА ОЛЕКСIIВЦI",
-    //   address: "ПРОСПЕКТ ЛЮДВІГА СВОБОДИ, 29",
-    //   modeOfOperation: "asdasd",
-    //   telephone: "123123",
-    //   services: [
-    //     "Тренажерний зал",
-    //     "Фітнес",
-    //     "Спорт бар",
-    //     "Стретчінг",
-    //     "Фітнес-мікс",
-    //     "Salsation",
-    //   ],
-    //   coaches: [
-    //     {
-    //       name: "asd asd",
-    //       tel: "123123",
-    //       description: "text",
-    //     },
-    //   ],
-    //   sportBar: true,
-    // },
-    // {
-    //   id: "6oleksa2",
-    //   image: stateImage.gym3,
-    //   peopleName: "НА ОЛЕКСIIВЦI",
-    //   address: "ПРОСПЕКТ ЛЮДВІГА СВОБОДИ, 29",
-    //   modeOfOperation: "asdasd",
-    //   telephone: "123123",
-    //   services: [
-    //     "Тренажерний зал",
-    //     "Фітнес",
-    //     "Спорт бар",
-    //     "Стретчінг",
-    //     "Фітнес-мікс",
-    //     "Salsation",
-    //   ],
-    //   coach: [
-    //     {
-    //       name: "asd asd",
-    //       tel: "123123",
-    //       description: "text",
-    //     },
-    //   ],
-    //   sportBar: true,
-    // },
+    {
+      id: "3602mkp",
+      image: stateImage.gym4,
+      peopleName: "НА 602-МРН",
+      address: "ВУЛ. АМОСОВА, 36-А",
+      modeOfOperation: "asdasd",
+      telephone: "123123",
+      services: [
+        "Тренажерний зал",
+        "Фітнес",
+        "Спорт бар",
+        "Стретчінг",
+        "Фітнес-мікс",
+        "Salsation",
+      ],
+      coaches: [
+        {
+          name: "asd asd",
+          tel: "123123",
+          description: "text",
+        },
+      ],
+      sportBar: true,
+    },
+    {
+      id: "4htz",
+      image: stateImage.gym5,
+      peopleName: "НА ХТЗ",
+      address: "ПР-Т. ОЛЕКСАНДРІВСЬКИЙ, 99",
+      modeOfOperation: "asdasd",
+      telephone: "123123",
+      services: [
+        "Тренажерний зал",
+        "Фітнес",
+        "Спорт бар",
+        "Стретчінг",
+        "Фітнес-мікс",
+        "Salsation",
+      ],
+      coaches: [
+        {
+          name: "asd asd",
+          tel: "123123",
+          description: "text",
+        },
+      ],
+      sportBar: true,
+    },
+    {
+      id: "5oleksa1",
+      image: stateImage.gym3,
+      peopleName: "НА ОЛЕКСIIВЦI",
+      address: "ПРОСПЕКТ ЛЮДВІГА СВОБОДИ, 29",
+      modeOfOperation: "asdasd",
+      telephone: "123123",
+      services: [
+        "Тренажерний зал",
+        "Фітнес",
+        "Спорт бар",
+        "Стретчінг",
+        "Фітнес-мікс",
+        "Salsation",
+      ],
+      coaches: [
+        {
+          name: "asd asd",
+          tel: "123123",
+          description: "text",
+        },
+      ],
+      sportBar: true,
+    },
+    {
+      id: "6oleksa2",
+      image: stateImage.gym3,
+      peopleName: "НА ОЛЕКСIIВЦI",
+      address: "ПРОСПЕКТ ЛЮДВІГА СВОБОДИ, 29",
+      modeOfOperation: "asdasd",
+      telephone: "123123",
+      services: [
+        "Тренажерний зал",
+        "Фітнес",
+        "Спорт бар",
+        "Стретчінг",
+        "Фітнес-мікс",
+        "Salsation",
+      ],
+      coach: [
+        {
+          name: "asd asd",
+          tel: "123123",
+          description: "text",
+        },
+      ],
+      sportBar: true,
+    },
     // {
     //   id: "7oleksa4",
     //   image: stateImage.gym3,

@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 const BlackLine = (props) => {
   const currentGym = useSelector((state) => state.gymReducer.currentGym);
   // console.log("currentGym : ", currentGym);
-  console.log("BlackLine props : ", props);
+  // console.log("BlackLine props : ", props);
   return (
     <div className={blackLine.blackLine}>
       <div

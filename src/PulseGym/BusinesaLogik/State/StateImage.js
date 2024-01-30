@@ -15,8 +15,29 @@ import phone from "../Images/phone.png";
 import coach1 from "../Images/coach1.jpg";
 import checkMark from "../Images/checkMark.png";
 import marker from "../Images/marker.png";
+import scrgym1 from "../Images/scrgym1.jpg";
+import scrgym2 from "../Images/scrgym2.jpg";
+import scrgym3 from "../Images/scrgym3.jpg";
+import scrgym4 from "../Images/scrgym4.png";
+import scrgym5 from "../Images/scrgym5.jpg";
+import scrgym6 from "../Images/scrgym6.jpg";
+import scrgym7 from "../Images/scrgym7.avif";
+import scrgym8 from "../Images/scrgym8.jpg";
+import scrgym9 from "../Images/scrgym9.webp";
+import scrgym10 from "../Images/scrgym10.avif";
+import scrgym11 from "../Images/scrgym11.jpg";
+import dollar from "../Images/dollar.png";
+import chair from "../Images/chair.png";
+import dumbbell from "../Images/dumbbell.png";
+import profile from "../Images/profile.png";
+import threeDots from "../Images/threeDots.png";
 
 export const stateImage = {
+  threeDots,
+  profile,
+  dumbbell,
+  chair,
+  dollar,
   logo,
   girl,
   man,
@@ -33,4 +54,17 @@ export const stateImage = {
   coach1,
   checkMark,
   marker,
+  scrgym: [
+    scrgym1,
+    scrgym2,
+    scrgym3,
+    scrgym4,
+    scrgym5,
+    scrgym6,
+    scrgym7,
+    scrgym8,
+    scrgym9,
+    scrgym10,
+    scrgym11,
+  ],
 };

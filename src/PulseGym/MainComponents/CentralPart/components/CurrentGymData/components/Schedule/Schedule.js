@@ -14,31 +14,6 @@ const Schedule = () => {
   const { currentPriceList } = useSelector((state) => state.gymReducer);
   return (
     <div className={schedule.schedule}>
-      {/* <Button variant="primary">Primary</Button>{" "}
-      <Button variant="success">Success</Button>{" "}
-      <Button variant="warning">Warning</Button>{" "} */}
-      <Button variant="danger">Danger</Button> {/*  */}
-      <Carousel>
-        <Carousel.Item>
-          <img src={stateConst.stateImage.gym} />
-
-          {/* <ExampleCarouselImage text="First slide" /> */}
-          <Carousel.Caption></Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img src={stateConst.stateImage.gym2} />
-          {/* <ExampleCarouselImage text="Second slide" /> */}
-          <Carousel.Caption></Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img src={stateConst.stateImage.gym3} />
-          {/* <ExampleCarouselImage text="Third slide" /> */}
-          <Carousel.Caption>asd</Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-      {/*  */}
-      {/* <Button variant="outline-danger">Danger</Button>{" "}
-      <Button variant="outline-info">Info</Button>{" "} */}
       <div className={schedule.header}>
         <div className={schedule.scheduleText}>Schedule</div>
         <div
@@ -80,3 +55,22 @@ const Schedule = () => {
 };
 
 export default Schedule;
+
+{
+  /* <Button variant="danger">Danger</Button>
+<Carousel>
+  <Carousel.Item>
+    <img src={stateConst.stateImage.gym} />
+
+    <Carousel.Caption></Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img src={stateConst.stateImage.gym2} />
+    <Carousel.Caption></Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img src={stateConst.stateImage.gym3} />
+    <Carousel.Caption>asd</Carousel.Caption>
+  </Carousel.Item>
+</Carousel> */
+}

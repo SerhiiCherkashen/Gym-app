@@ -2,6 +2,7 @@ import React from "react";
 import mTAP from "./MapTelAddressPhoto.module.css";
 import { useSelector } from "react-redux";
 import { stateConst } from "../../../../../../BusinesaLogik/State/StateConst";
+import MapComponent from "../../../DopComponents/MapComponent/MapComponent";
 
 const MapTelAddressPhoto = () => {
   const currentGym = useSelector((state) => state.gymReducer.currentGym);
@@ -9,8 +10,13 @@ const MapTelAddressPhoto = () => {
     <div>
       <h1>MapTelAddressPhoto</h1>
       <div className={mTAP.wrapMapText}>
-        <div>
-          <h1>MAP</h1>
+        <div className={mTAP.map}>
+          <MapComponent
+            arrayCoordinates={[currentGym.coordinates]}
+            center={currentGym.coordinates}
+            zoom={16}
+            borderRadius={"50px"}
+          />
         </div>
         <div className={mTAP.wrapColumn}>
           <div className={mTAP.wrapImgText}>
