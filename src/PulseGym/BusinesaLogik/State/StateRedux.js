@@ -3,6 +3,7 @@ export const stateRedux = {
   currentGym: {},
   currentPriceList: [],
   currentCoaches: [],
+  schedulePage: true,
 };
 // priceList: [
 //   {

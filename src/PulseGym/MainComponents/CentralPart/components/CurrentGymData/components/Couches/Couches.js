@@ -4,14 +4,16 @@ import { useSelector } from "react-redux";
 
 const Couches = () => {
   const { currentCoaches } = useSelector((state) => state.gymReducer);
-  console.log("Couches : ", currentCoaches.length);
+  // console.log("Couches.js : ", currentCoaches.length);
   return (
     <div className={coaches.coaches}>
       <div className={coaches.coachesText}>Couches</div>
       <div className={coaches.wrapDataCoaches}>
-        {currentCoaches.map((element) => {
+        {currentCoaches.map((element, index) => {
           return (
-            <div className={coaches.wrapOneCoach}>
+            <div
+              key={index + Date.now() + Math.ceil(Math.random() * 100)}
+              className={coaches.wrapOneCoach}>
               <img src={element.image} />
               <div className={coaches.text}> {element.name}</div>
               <div className={coaches.text}> {element.tel}</div>

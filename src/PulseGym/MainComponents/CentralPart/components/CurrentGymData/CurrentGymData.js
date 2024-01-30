@@ -6,11 +6,14 @@ import MapTelAddressPhoto from "./components/MapTelAddressPhoto/MapTelAddressPho
 import Services from "./components/Services/Services";
 import PriceList from "./components/PriceList/PriceList";
 import Couches from "./components/Couches/Couches";
+import Schedule from "./components/Schedule/Schedule";
+import { useSelector } from "react-redux";
 
 const CurrentGymData = () => {
+  const { schedulePage } = useSelector((state) => state.gymReducer);
   return (
     <div className={cgd.currentGymData}>
-      <h1>CurrentGymData</h1>
+      {/* <h1>CurrentGymData</h1> */}
       <BlackLine
         leftContext={"CurrentGymData"}
         rightContext={"list"}
@@ -19,7 +22,7 @@ const CurrentGymData = () => {
       <div className={cgd.content}>
         <MapTelAddressPhoto />
         <Services />
-        <PriceList />
+        {schedulePage ? <Schedule /> : <PriceList />}
         <Couches />
       </div>
     </div>

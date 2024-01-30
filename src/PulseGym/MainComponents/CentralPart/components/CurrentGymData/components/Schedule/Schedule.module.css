@@ -1,0 +1,53 @@
+.schedule {
+  padding: 50px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.scheduleText {
+  font-size: 50px;
+  font-weight: 700;
+}
+.priceListText {
+  color: orange;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.wrapSchedule {
+  /* background-color: rgb(133, 119, 255); */
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 3fr repeat(6, 1fr);
+  gap: 20px;
+}
+.orangeMode {
+  background-color: orange;
+  border-radius: 30px;
+  color: white;
+}
+
+.text {
+  text-align: start;
+  font-size: 26px;
+}
+.first {
+  grid-column-start: 1;
+}
+.pn {
+  grid-column-start: 2;
+}
+.vt {
+  grid-column-start: 3;
+}
+.sr {
+  grid-column-start: 4;
+}
+.cht {
+  grid-column-start: 5;
+}
+.pt {
+  grid-column-start: 6;
+}

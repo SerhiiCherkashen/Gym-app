@@ -8,6 +8,7 @@ import ContactsPage from "./components/ContactsPage/ContactsPage";
 import PhotoPage from "./components/PhotoPage/PhotoPage";
 import { Routes, Route } from "react-router-dom";
 import CurrentGymData from "./components/CurrentGymData/CurrentGymData";
+import PagePhotoOneGym from "./components/PagePhotoOneGym/PagePhotoOneGym";
 
 const CentralPart = () => {
   return (
@@ -17,6 +18,9 @@ const CentralPart = () => {
         <Route
           path="/clubsPage/currentGymData"
           element={<CurrentGymData />}></Route>
+        <Route
+          path="/clubsPage/pagePhotoOneGym"
+          element={<PagePhotoOneGym />}></Route>
         <Route path="/" element={<MainPage />}></Route>
         <Route path="/clubsPage" element={<ClubsPage />}></Route>
         <Route path="/blogPage" element={<BlogPage />}></Route>

@@ -13,6 +13,8 @@ import geo from "../Images/geo.png";
 import clock from "../Images/clock.png";
 import phone from "../Images/phone.png";
 import coach1 from "../Images/coach1.jpg";
+import checkMark from "../Images/checkMark.png";
+import marker from "../Images/marker.png";
 
 export const stateImage = {
   logo,
@@ -29,4 +31,6 @@ export const stateImage = {
   geo,
   phone,
   coach1,
+  checkMark,
+  marker,
 };

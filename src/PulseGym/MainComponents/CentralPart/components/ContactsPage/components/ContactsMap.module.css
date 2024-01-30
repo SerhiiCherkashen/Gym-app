@@ -1,0 +1,48 @@
+.wrapOneGym {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px;
+}
+.leftPart {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.orangeText {
+  color: orange;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+  padding-right: 20px;
+  transition: padding-right 0.3s;
+  transition: 0.5s;
+}
+
+.orangeText:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  /* right: 20px; */
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 8px;
+  border-color: transparent transparent transparent orange;
+  transform: translateY(-50%);
+  transition: right 0.3s; /* Добавляем плавный переход для положения стрелки */
+}
+.orangeText:hover {
+  font-size: 21px;
+  padding-right: 40px; /* Изменяем отступ справа при наведении */
+}
+
+.wrapOneGym span {
+  font-weight: 600;
+}
+.orangeLine {
+  background-color: orange;
+  height: 5px;
+}

@@ -9,17 +9,18 @@ const gymSlice = createSlice({
   initialState: state,
   reducers: {
     chooseGym: (state, actions) => {
+      console.log("chooseGym");
       const id = actions.payload;
       let index = stateConst.gyms.findIndex((element) => element.id === id);
-      console.log("TRUE", id);
-      console.log("index", index);
+      // console.log("TRUE", id);
+      // console.log("index", index);
       state.currentGym = stateConst.gyms[index];
       //
 
       //
       state.currentPriceList = [];
       state.currentGym.services.forEach((element) => {
-        console.log("element : ", element);
+        // console.log("element : ", element);
         let serviceIndex = stateConst.priceList.findIndex(
           (item) => item.searchId === element
         );
@@ -35,7 +36,7 @@ const gymSlice = createSlice({
       //
       state.currentCoaches = [];
       state.currentGym.coaches.forEach((element) => {
-        console.log("element : ", element);
+        // console.log("element : ", element);
         let coachesIndex = stateConst.coaches.findIndex(
           (item) => item.name === element
         );
@@ -44,8 +45,11 @@ const gymSlice = createSlice({
         }
       });
     },
+    switchSchedule: (state) => {
+      state.schedulePage = !state.schedulePage;
+    },
   },
 });
 
-export const { chooseGym } = gymSlice.actions;
+export const { chooseGym, switchSchedule } = gymSlice.actions;
 export default gymSlice.reducer;

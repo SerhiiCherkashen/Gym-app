@@ -1,0 +1,48 @@
+.photoMap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+  background-color: rgb(141, 211, 171);
+}
+.wrapOneGym {
+  /* box-sizing: border-box; */
+  width: 220px;
+  height: 220px;
+  margin: 30px;
+  background-color: cyan;
+  border-radius: 20px;
+  padding: 20px;
+  border: 3px solid rgb(0, 0, 0, 0);
+}
+.wrapOneGym:hover {
+  border: 3px solid orange;
+}
+.photoPeopleAddress {
+  display: flex;
+}
+.photoPeopleAddress img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.orangeText {
+  color: orange;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.peopleName {
+  text-align: start;
+}
+.address {
+  text-align: start;
+  height: 80px;
+  margin-top: 20px;
+}
+.watchPhoto {
+  /* background-color: khaki; */
+  text-align: start;
+  font-size: 20px;
+  font-weight: 500;
+}

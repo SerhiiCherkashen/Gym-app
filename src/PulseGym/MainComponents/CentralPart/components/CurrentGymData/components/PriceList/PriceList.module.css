@@ -14,11 +14,16 @@
   padding-right: 30px; */
 }
 .priceListTextSchedule {
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .priceListText {
   font-size: 50px;
+  font-weight: 700;
+}
+.scheduleText {
+  color: orange;
+  font-size: 40px;
   font-weight: 700;
 }
 .nameServiceTheme {

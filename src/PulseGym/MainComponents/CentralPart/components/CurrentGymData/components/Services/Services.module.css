@@ -1,13 +1,33 @@
 .services {
+  background-color: rgb(209, 209, 209);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  margin: 50px;
 }
 .left {
+  /* background-color: rgb(255, 169, 226); */
   font-size: 50px;
   font-weight: 700;
 }
 .right {
-  font-size: 50px;
+  /* background-color: aqua; */
+  width: 650px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
   font-weight: 700;
+}
+.wrapOneService {
+  /* background-color: yellowgreen; */
+  width: 200px;
+  margin: 5px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.wrapOneService img {
+  width: 17px;
+  height: 17px;
 }

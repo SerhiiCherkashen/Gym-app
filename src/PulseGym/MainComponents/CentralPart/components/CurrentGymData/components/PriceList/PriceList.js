@@ -1,20 +1,26 @@
 import React from "react";
 import priceList from "./PriceList.module.css";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { switchSchedule } from "../../../../../../BusinesaLogik/Redux/GymSlice";
 
 const PriceList = () => {
+  const dispatch = useDispatch();
   const { currentPriceList } = useSelector((state) => state.gymReducer);
   return (
     <div className={priceList.priceList}>
       <div
         className={`${priceList.priceListTextSchedule} ${priceList.displayFJCSBAIC} `}>
         <div className={priceList.priceListText}>PriceList</div>
-        <div>Raspisanie</div>
+        <div
+          className={priceList.scheduleText}
+          onClick={() => dispatch(switchSchedule())}>
+          Raspisanie
+        </div>
       </div>
       <div className={priceList.right}>
-        {currentPriceList.map((element) => {
+        {currentPriceList.map((element, index) => {
           return (
-            <div>
+            <div key={index + Date.now() + Math.ceil(Math.random() * 100)}>
               <div className={priceList.nameServiceTheme}> {element.name}</div>
               <div>
                 {element.services.map((item) => {
@@ -33,7 +39,6 @@ const PriceList = () => {
           );
         })}
       </div>
-      {/* <div className={priceList.right}> {currentPriceList[0].name}</div> */}
     </div>
   );
 };

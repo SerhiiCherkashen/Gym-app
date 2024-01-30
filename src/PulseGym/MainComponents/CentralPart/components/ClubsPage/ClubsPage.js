@@ -10,7 +10,6 @@ const ClubsPage = () => {
   const dispatch = useDispatch();
   return (
     <div className={clubsP.clubsPage}>
-      {/* <h1 className={clubsP.text}>ClubsPage</h1> */}
       <BlackLine leftContext={"Our Clubs"} rightContext={"list"} />
 
       <div className={clubsP.gyms}>
