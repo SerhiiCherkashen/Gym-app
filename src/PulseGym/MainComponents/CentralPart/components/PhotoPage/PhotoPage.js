@@ -8,7 +8,9 @@ const PhotoPage = () => {
     <div>
       <h1 className={photoP.text}>PhotoPage</h1>
       <BlackLine leftContext={"Photos"} rightContext={"Watch your Photos "} />
-      <PhotoMap />
+      <div className={photoP.container}>
+        <PhotoMap />
+      </div>
     </div>
   );
 };

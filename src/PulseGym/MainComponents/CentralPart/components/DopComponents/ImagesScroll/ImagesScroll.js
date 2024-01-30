@@ -16,12 +16,12 @@ const ImagesScroll = (props) => {
   return (
     <div className={imagesScroll.imagesScroll}>
       {/* <h1>imagesScroll</h1> */}
-      <button onClick={() => dispatch(leftClick())}> - </button>
+      <button onClick={() => dispatch(leftClick())}> {"<"} </button>
       <img src={arrayImageScroll[0]} />
       <img src={arrayImageScroll[1]} />
       <img src={arrayImageScroll[2]} />
       <img src={arrayImageScroll[3]} />
-      <button onClick={() => dispatch(rightClick())}> + </button>
+      <button onClick={() => dispatch(rightClick())}> {">"} </button>
     </div>
   );
 };

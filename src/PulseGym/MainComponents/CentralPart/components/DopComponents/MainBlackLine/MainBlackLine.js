@@ -10,7 +10,7 @@ const MainBlackLine = (props) => {
       <div className={mainBlackLine.blackLine}>
         <div className={mainBlackLine.leftContext}>
           <div className={mainBlackLine.LaskavoProsimo}>Laskavo prosimo v </div>
-          <div className={mainBlackLine.pulsGym}>PULS GYM</div>
+          <div className={mainBlackLine.pulsGym}>PULSE GYM</div>
           <div className={mainBlackLine.wrapTreeImgText}>
             <div className={mainBlackLine.wrapImg}>
               <img

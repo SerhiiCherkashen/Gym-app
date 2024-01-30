@@ -8,13 +8,12 @@ const MapTelAddressPhoto = () => {
   const currentGym = useSelector((state) => state.gymReducer.currentGym);
   return (
     <div>
-      <h1>MapTelAddressPhoto</h1>
       <div className={mTAP.wrapMapText}>
         <div className={mTAP.map}>
           <MapComponent
             arrayCoordinates={[currentGym.coordinates]}
             center={currentGym.coordinates}
-            zoom={16}
+            zoom={17}
             borderRadius={"50px"}
           />
         </div>

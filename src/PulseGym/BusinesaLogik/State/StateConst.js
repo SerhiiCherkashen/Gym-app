@@ -27,7 +27,7 @@ export const stateConst = {
   gyms: [
     {
       id: "0holodka",
-      coordinates: [50.006, 36.229],
+      coordinates: [49.983445213753505, 36.18331090937972],
       image: stateImage.gym,
       peopleName: "ХОЛОДНА ГОРА АТЛАС",
       address: "ВУЛ. ПОЛТАВСЬКИЙ ШЛЯХ 146 ТЦ АТЛАС",
@@ -42,14 +42,14 @@ export const stateConst = {
         "Salsation",
         "TRX",
       ],
-      coaches: ["anton asd", "qwerty", "hyilo"],
+      coaches: ["anton asd", "qwerty", "SHWARSNEGER"],
       sportBar: true,
     },
     {
       id: "1masela",
-      coordinates: [50.2, 36.3],
+      coordinates: [49.95627787213421, 36.3646997727498],
       image: stateImage.gym2,
-      peopleName: "НА МФСЕЛЬСКОГО",
+      peopleName: "НА МAСЕЛЬСКОГО",
       address: "ПР-Т. ГЕРОЇВ ХАРКОВА, 273-К",
       modeOfOperation: "asdasd",
       telephone: "123123",
@@ -72,7 +72,7 @@ export const stateConst = {
     },
     {
       id: "2oleksiivka",
-      coordinates: [49.95, 36.01],
+      coordinates: [50.04853034519011, 36.20613608949896],
       image: stateImage.gym3,
       peopleName: "НА ОЛЕКСIIВЦI",
       address: "ПРОСПЕКТ ЛЮДВІГА СВОБОДИ, 29",
@@ -323,7 +323,7 @@ export const stateConst = {
     },
     {
       image: stateImage.coach1,
-      name: "hyilo",
+      name: "SHWARSNEGER",
       tel: "123123",
       description: "text",
     },

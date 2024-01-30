@@ -6,12 +6,7 @@ import { stateConst } from "../../../../../../BusinesaLogik/State/StateConst";
 const Services = () => {
   const { currentGym } = useSelector((state) => state.gymReducer);
   const { currentPriceList } = useSelector((state) => state.gymReducer);
-  // console.log(
-  //   "Services currentGym.currentPriceList.length : ",
-  //   currentPriceList.length
-  // );
-  // console.log("Services currentPriceList : ", Array.isArray(currentPriceList));
-  // console.log("Services currentGym: ", Array.isArray(currentGym));
+
   return (
     <div className={services.services}>
       <div className={services.left}>Services</div>

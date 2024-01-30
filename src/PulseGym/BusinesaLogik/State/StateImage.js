@@ -31,8 +31,12 @@ import chair from "../Images/chair.png";
 import dumbbell from "../Images/dumbbell.png";
 import profile from "../Images/profile.png";
 import threeDots from "../Images/threeDots.png";
+import edit1 from "../Images/edit1.png";
+import edit2 from "../Images/edit2.png";
 
 export const stateImage = {
+  edit1,
+  edit2,
   threeDots,
   profile,
   dumbbell,

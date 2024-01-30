@@ -1,13 +1,13 @@
 .text {
   margin-left: auto;
   margin-right: auto;
-  width: 1460px;
+  /* width: 1460px; */
   /* padding: 20px; */
 }
 .wrapBlockOneGym {
   margin-left: auto;
   margin-right: auto;
-  width: 1460px;
+  /* width: 1460px; */
 }
 .wrapOneGym {
   display: flex;
@@ -61,6 +61,7 @@
   height: 5px;
 }
 .map {
+  /* background-color: aqua; */
   width: 500px;
   height: 150px;
 }

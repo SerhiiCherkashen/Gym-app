@@ -18,6 +18,8 @@
 
 .App {
   text-align: center;
-  background-color: rgb(217, 218, 217);
-  padding: 50px;
+  background-color: rgb(235, 235, 235);
+  /* width: 100%; */
+  /* background-color: rgb(217, 218, 217); */
+  /* padding: 50px; */
 }

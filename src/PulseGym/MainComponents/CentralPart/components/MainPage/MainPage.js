@@ -9,24 +9,30 @@ import WhyExactly from "./components/WhyExactly/WhyExactly";
 const MainPage = () => {
   return (
     <div>
-      <h1 className={mainP.text}>MainPage</h1>
+      {/* <h1 className={mainP.text}>MainPage</h1> */}
       <MainBlackLine />
-      <div>
+      <div className={mainP.container}>
+        <div>
+          <div>
+            <ImagesScroll />
+          </div>
+        </div>
+        <div className={mainP.map}>
+          <MapComponent
+            arrayCoordinates={[
+              stateConst.gyms[0].coordinates,
+              stateConst.gyms[1].coordinates,
+              stateConst.gyms[2].coordinates,
+            ]}
+            center={stateConst.gyms[0].coordinates}
+            zoom={11}
+            // borderRadius={"50px"}
+          />
+        </div>
+        <WhyExactly />
         <div>
           <ImagesScroll />
         </div>
-      </div>
-      <div className={mainP.map}>
-        <MapComponent
-          arrayCoordinates={[stateConst.gyms[0].coordinates]}
-          center={stateConst.gyms[0].coordinates}
-          zoom={12}
-          // borderRadius={"50px"}
-        />
-      </div>
-      <WhyExactly />
-      <div>
-        <ImagesScroll />
       </div>
     </div>
   );

@@ -2,14 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   margin: 30px;
-  background-color: rgb(141, 211, 171);
+  /* background-color: rgb(141, 211, 171); */
 }
 .wrapOneGym {
   /* box-sizing: border-box; */
   width: 250px;
   height: 250px;
   margin: 30px;
-  background-color: cyan;
+  background-color: rgb(224, 224, 224);
   border-radius: 20px;
   padding: 20px;
   border: 3px solid rgb(0, 0, 0, 0);

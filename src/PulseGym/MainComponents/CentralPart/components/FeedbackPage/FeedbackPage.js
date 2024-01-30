@@ -1,15 +1,18 @@
 import React from "react";
 import feedbackP from "./FeedbackPage.module.css";
 import BlackLine from "../DopComponents/BlackLine/BlackLine";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { openPopup } from "../../../../BusinesaLogik/Redux/GymSlice";
 import PopUpWindow from "./components/PopUpWindow/PopUpWindow";
+import { stateConst } from "../../../../BusinesaLogik/State/StateConst";
 
 const FeedbackPage = () => {
   const dispatch = useDispatch();
+  const { feedback } = useSelector((state) => state.feedbackReducer);
+  // const { feedback } = useSelector((state) => state.gymReducer);
   return (
     <div>
-      <h1 className={feedbackP.text}>FeedbackPage</h1>{" "}
+      {/* <h1 className={feedbackP.text}>FeedbackPage</h1>{" "} */}
       <BlackLine
         leftContext={"Feedbsacks"}
         rightContext={"Send your feedback "}
@@ -17,6 +20,24 @@ const FeedbackPage = () => {
       <div>
         <button onClick={() => dispatch(openPopup())}>Открыть окно</button>
         <PopUpWindow />
+      </div>
+      <div className={feedbackP.container}>
+        {feedback.map((element) => {
+          return (
+            <div className={feedbackP.wrapFeedback}>
+              <div className={feedbackP.header}>
+                <div className={feedbackP.imgNameAddress}>
+                  <img src={stateConst.stateImage.edit1} />
+                  <div className={feedbackP.text}>{element.name} </div>
+                  <div className={feedbackP.text}>{element.address} </div>
+                </div>
+                <div className={feedbackP.text}>Data</div>
+              </div>
+              <div className={feedbackP.text}>{element.text}</div>
+              <div className={feedbackP.orangeLine}></div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

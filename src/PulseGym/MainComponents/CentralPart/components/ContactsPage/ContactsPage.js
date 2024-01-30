@@ -12,7 +12,9 @@ const ContactsPage = () => {
         leftContext={"Contacts"}
         rightContext={"Watch all contacts on map "}
       />
-      <ContactsMap />
+      <div className={contactsP.container}>
+        <ContactsMap />
+      </div>
     </div>
   );
 };
