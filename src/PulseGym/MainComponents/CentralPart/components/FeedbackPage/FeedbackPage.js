@@ -17,7 +17,7 @@ const FeedbackPage = () => {
         leftContext={"Feedbsacks"}
         rightContext={"Send your feedback "}
       />
-      <div>
+      <div className={feedbackP.addFeedback}>
         <button onClick={() => dispatch(openPopup())}>Открыть окно</button>
         <PopUpWindow />
       </div>

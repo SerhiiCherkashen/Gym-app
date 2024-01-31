@@ -1,13 +1,15 @@
 import React from "react";
-import pagePhotoOneGym from "./PagePhotoOneGym.module.css";
+import pPhOG from "./PagePhotoOneGym.module.css";
 import BlackLine from "../DopComponents/BlackLine/BlackLine";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import PhotoPopUpWindow from "./components/PhotoPopUpWindow/PhotoPopUpWindow";
+import { openPhotoPopup } from "../../../../BusinesaLogik/Redux/GymSlice";
+// import { openPhotoPopup } from "../../../../BusinesaLogik/Redux/PhotoPopUpSlice";
 
-const PagePhotoOneGym = (props) => {
+const PagePhotoOneGym = () => {
   const { currentGym } = useSelector((state) => state.gymReducer);
-  // console.log("PagePhotoOneGym props : ", Object.keys(props));
-  // console.log("PagePhotoOneGym currentGym : ", Object.keys(currentGym));
+  const dispatch = useDispatch();
   return (
     <div>
       <h1>PagePhotoOneGym</h1>
@@ -15,8 +17,22 @@ const PagePhotoOneGym = (props) => {
         leftContext={"PULSE GYM " + currentGym.peopleName}
         rightContext={<Link to="/photoPage">ALL Clubs</Link>}
       />
+      <div className={pPhOG.wrapMapPhoto}>
+        {currentGym.imageArray.map((element, index) => {
+          return (
+            <div className={pPhOG.hover}>
+              <img
+                index={index}
+                src={element}
+                onClick={() => dispatch(openPhotoPopup(index))}
+              />
+              <PhotoPopUpWindow />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
 
-export default PagePhotoOneGym;
+export default PagePhotoOneGym; // 38  ? ? ?

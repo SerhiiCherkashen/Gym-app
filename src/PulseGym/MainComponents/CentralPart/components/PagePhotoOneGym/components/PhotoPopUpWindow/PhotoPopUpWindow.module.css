@@ -1,0 +1,60 @@
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: #ffffff; */
+  padding: 20px;
+  /* box-shadow: 0px 0px 10px 0px #000000; */
+  z-index: 1;
+  transition: all 0.3s ease; /* Анимация для плавного открытия/закрытия */
+}
+
+.popup.open {
+  display: block;
+}
+
+.popupContent {
+  text-align: center;
+}
+
+.close {
+  color: #000000;
+  float: right;
+  font-size: 100px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #fffcfc;
+}
+
+/*  */
+/*  */
+/*  */
+.wrapPopUp {
+  width: 700px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+.wrapPopUp img {
+  width: 500px;
+  height: 500px;
+}
+/* .wrapPopUp img :hover {
+  transform: scale(1);
+} */
+.wrapPopUp button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: orange;
+  font-size: 50px;
+  font-weight: 700;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}

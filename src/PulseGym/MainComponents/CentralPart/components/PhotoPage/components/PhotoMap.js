@@ -16,7 +16,6 @@ const PhotoMap = () => {
           return (
             <div
               onClick={() => dispatch(chooseGym(element.id))}
-              // onClick={() => console.log("PhotoMap LINK click")}
               key={index + Date.now()}
               className={photoMap.wrapOneGym}>
               <div className={photoMap.photoPeopleAddress}>

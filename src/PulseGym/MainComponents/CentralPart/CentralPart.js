@@ -9,12 +9,14 @@ import PhotoPage from "./components/PhotoPage/PhotoPage";
 import { Routes, Route } from "react-router-dom";
 import CurrentGymData from "./components/CurrentGymData/CurrentGymData";
 import PagePhotoOneGym from "./components/PagePhotoOneGym/PagePhotoOneGym";
+import BlogOnePage from "./components/BlogPage/component/BlogOnePage/BlogOnePage.js";
 
 const CentralPart = () => {
   return (
     <div className={cp.centralPart}>
       {/* <h1>CentralPart</h1> */}
       <Routes>
+        <Route path="/blogOnePage" element={<BlogOnePage />}></Route>
         <Route
           path="/clubsPage/currentGymData"
           element={<CurrentGymData />}></Route>

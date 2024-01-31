@@ -1,0 +1,32 @@
+.container {
+  /* height: 100px; */
+  /* background-color: yellow; */
+}
+/*  */
+/*  */
+/*  */
+.marqueeContainer {
+  /* width: 1000px; */
+  padding: 50px;
+  /* background-color: aqua; */
+  overflow: hidden;
+}
+
+.marqueeWrapper {
+  display: flex;
+}
+.marqueeText {
+  font-size: 30px;
+  white-space: nowrap;
+  animation: marquee-animation 5s linear infinite;
+}
+
+@keyframes marquee-animation {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

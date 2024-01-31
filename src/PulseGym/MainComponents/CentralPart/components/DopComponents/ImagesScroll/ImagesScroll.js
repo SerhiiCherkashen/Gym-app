@@ -13,14 +13,27 @@ const ImagesScroll = (props) => {
     (state) => state.gymReducer
   );
 
+  // let imageArray;
+  // props.imageArray
+  //   ? (imageArray = props.imageArray)
+  //   : (imageArray = arrayImageScroll);
+
+  // stateConst.stateImage.scrgym[0] = imageArray[0],
+  // stateConst.stateImage.scrgym[1] = imageArray[1],
+  // stateConst.stateImage.scrgym[2] = imageArray[2],
+  // stateConst.stateImage.scrgym[3] = imageArray[3],
+
   return (
     <div className={imagesScroll.imagesScroll}>
-      {/* <h1>imagesScroll</h1> */}
-      <button onClick={() => dispatch(leftClick())}> {"<"} </button>
+      <button onClick={() => dispatch(leftClick())}>{"<"}</button>
       <img src={arrayImageScroll[0]} />
       <img src={arrayImageScroll[1]} />
       <img src={arrayImageScroll[2]} />
       <img src={arrayImageScroll[3]} />
+      {/* <img src={stateConst.stateImage.scrgym[0]} />
+      <img src={stateConst.stateImage.scrgym[1]} />
+      <img src={stateConst.stateImage.scrgym[2]} />
+      <img src={stateConst.stateImage.scrgym[3]} /> */}
       <button onClick={() => dispatch(rightClick())}> {">"} </button>
     </div>
   );

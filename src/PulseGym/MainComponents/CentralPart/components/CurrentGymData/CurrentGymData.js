@@ -11,7 +11,7 @@ import { useSelector } from "react-redux";
 import ImagesScroll from "../DopComponents/ImagesScroll/ImagesScroll";
 
 const CurrentGymData = () => {
-  const { schedulePage } = useSelector((state) => state.gymReducer);
+  const { schedulePage, currentGym } = useSelector((state) => state.gymReducer);
   return (
     <div className={cgd.currentGymData}>
       {/* <h1>CurrentGymData</h1> */}
@@ -22,7 +22,7 @@ const CurrentGymData = () => {
       />
       <div className={cgd.content}>
         <MapTelAddressPhoto />
-        <ImagesScroll />
+        <ImagesScroll imageArray={currentGym.imageArray} />
         <Services />
         {schedulePage ? <Schedule /> : <PriceList />}
         <Couches />

@@ -1,4 +1,3 @@
-import React, { useDeferredValue } from "react";
 import { createSlice } from "@reduxjs/toolkit";
 import { stateConst } from "../State/StateConst";
 import { stateRedux } from "../State/StateRedux";
@@ -83,10 +82,12 @@ const gymSlice = createSlice({
         state.startSrcImg -= 1;
       }
     },
-    rightClick: (state) => {
+    rightClick: (state, actions) => {
+      // let imageArray = actions.payload;
+      // console.log(">>>>>", imageArray.length); // 16
       let countImages = 4;
-      let arr = [11, 22, 33, 44];
-      const length = stateConst.stateImage.scrgym.length;
+      const length = stateConst.stateImage.scrgym.length; // work !!!
+      // const length = imageArray.length;
       state.arrayImageScroll = [];
 
       for (let i = 1; i <= countImages; i++) {
@@ -103,7 +104,9 @@ const gymSlice = createSlice({
         // }
 
         //
-
+        //
+        //
+        //// Work version !!!
         if (state.startSrcImg + i === length) {
           state.arrayImageScroll.push(stateConst.stateImage.scrgym[0]);
         }
@@ -120,6 +123,21 @@ const gymSlice = createSlice({
             stateConst.stateImage.scrgym[state.startSrcImg + i]
           );
         }
+        //
+        // if (state.startSrcImg + i === length) {
+        //   state.arrayImageScroll.push(imageArray[0]);
+        // }
+        // if (state.startSrcImg + i === length) {
+        //   state.arrayImageScroll.push(imageArray[1]);
+        // }
+        // if (state.startSrcImg + i === length) {
+        //   state.arrayImageScroll.push(imageArray[2]);
+        // }
+        // if (state.startSrcImg + i === length) {
+        //   state.arrayImageScroll.push(imageArray[3]);
+        // } else {
+        //   state.arrayImageScroll.push(imageArray[state.startSrcImg + i]);
+        // }
       }
       if (state.startSrcImg + 1 === length) {
         state.startSrcImg = 0;
@@ -135,6 +153,42 @@ const gymSlice = createSlice({
       console.log(" closePopup");
       state.popUp.isOpen = false;
     },
+    //
+    openPhotoPopup: (state, actions) => {
+      let index = actions.payload;
+      console.log("slice", index);
+      console.log("state.photoPopUp.isOpen : ", state.photoPopUp.isOpen);
+      state.photoPopUp.indexPhoto = index;
+      state.photoPopUp.isOpen = true;
+    },
+    closePhotoPopup: (state) => {
+      console.log("slice");
+      state.photoPopUp.isOpen = false;
+    },
+    leftPopUpButton: (state) => {
+      console.log("slice");
+      console.log("<");
+      let index = state.photoPopUp.indexPhoto;
+      if (index - 1 === -1) {
+        state.photoPopUp.indexPhoto = state.currentGym.imageArray.length - 1;
+      } else {
+        state.photoPopUp.indexPhoto -= 1;
+      }
+    },
+    rightPopUpButton: (state) => {
+      console.log("slice");
+      let index = state.photoPopUp.indexPhoto;
+      if (index + 1 === state.currentGym.imageArray.length) {
+        state.photoPopUp.indexPhoto = 0;
+      } else {
+        state.photoPopUp.indexPhoto += 1;
+      }
+    },
+    blogClick: (state, actions) => {
+      let index = actions.payload;
+      state.blogIndex = index;
+      console.log(index);
+    },
   },
 });
 
@@ -145,5 +199,10 @@ export const {
   rightClick,
   openPopup,
   closePopup,
+  openPhotoPopup,
+  closePhotoPopup,
+  leftPopUpButton,
+  rightPopUpButton,
+  blogClick,
 } = gymSlice.actions;
 export default gymSlice.reducer;

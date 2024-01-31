@@ -1,23 +1,56 @@
-import React from "react";
+import React, { useState } from "react";
 import blogP from "./BlogPage.module.css";
-import BlackLine from "../DopComponents/BlackLine/BlackLine";
 import { stateConst } from "../../../../BusinesaLogik/State/StateConst";
-import MapComponent from "../DopComponents/MapComponent/MapComponent";
+import { Link } from "react-router-dom";
+import BlackLine from "../DopComponents/BlackLine/BlackLine";
+import { useDispatch } from "react-redux";
+import { blogClick } from "../../../../BusinesaLogik/Redux/GymSlice";
 
 const BlogPage = () => {
+  const dispatch = useDispatch();
+  const [colorLink, setColorLink] = useState(null);
+  const handleMouseEnter = (id) => {
+    setColorLink(id);
+  };
+  const handleMouseLeave = () => {
+    setColorLink(false);
+  };
   return (
     <div className={blogP.blogP}>
-      <div className={blogP.map}>
-        <MapComponent
-          arrayCoordinates={[
-            [50.006, 36.229],
-            [50.006, 36.25],
-            [50.006, 36.27],
-            [50.006, 36.3],
-          ]}
-          center={[50.006, 36.229]}
-          zoom={11}
-        />
+      <BlackLine
+        leftContext={"Blog"}
+        rightContext={"Watch all contacts on map "}
+      />
+      <div className={blogP.container}>
+        {stateConst.blogInformation.map((element, index) => {
+          return (
+            <div className={blogP.wrapOneBlog}>
+              <img src={element.image} />
+              <div className={blogP.dateHashtag}>
+                <div className={`    ${blogP.dateHash} ${blogP.gray} `}>
+                  {element.date}
+                </div>
+                <div className={`${blogP.dateHash} ${blogP.orange} `}>
+                  {element.hashtag}
+                </div>
+              </div>
+              <div
+                className={` ${blogP.thema} `}
+                onClick={() => dispatch(blogClick(index))}>
+                <Link
+                  id={index}
+                  className={`${blogP.link}  ${
+                    colorLink === index && blogP.linkHovered
+                  }  `}
+                  onMouseEnter={() => handleMouseEnter(index)}
+                  onMouseLeave={handleMouseLeave}
+                  to="/blogOnePage">
+                  {element.thema}
+                </Link>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
