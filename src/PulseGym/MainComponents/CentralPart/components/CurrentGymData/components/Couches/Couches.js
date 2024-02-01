@@ -16,8 +16,10 @@ const Couches = () => {
               className={coaches.wrapOneCoach}>
               <img src={element.image} />
               <div className={coaches.text}> {element.name}</div>
+              <div className={`${coaches.text} ${coaches.description}`}>
+                {element.description}
+              </div>
               <div className={coaches.text}> {element.tel}</div>
-              <div className={coaches.text}> {element.description}</div>
             </div>
           );
         })}

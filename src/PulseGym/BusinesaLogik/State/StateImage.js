@@ -12,7 +12,7 @@ import gym5 from "../Images/gym5.jpg";
 import geo from "../Images/geo.png";
 import clock from "../Images/clock.png";
 import phone from "../Images/phone.png";
-import coach1 from "../Images/coach1.jpg";
+// import coach1 from "../Images/coach1.jpg";
 import checkMark from "../Images/checkMark.png";
 import marker from "../Images/marker.png";
 import scrgym1 from "../Images/scrgym1.jpg";
@@ -71,6 +71,30 @@ import pgSaltovka5 from "../Images/pgSaltovka5.webp";
 import pgSaltovka6 from "../Images/pgSaltovka6.webp";
 import pgSaltovka7 from "../Images/pgSaltovka7.webp";
 import pgSaltovka8 from "../Images/pgSaltovka8.webp";
+import coach1 from "../Images/coach1.jpg";
+import coach2 from "../Images/coach2.jpg";
+import coach3 from "../Images/coach3.jpg";
+import coach4 from "../Images/coach4.jpg";
+import coach5 from "../Images/coach5.jpg";
+import coach6 from "../Images/coach6.jpg";
+import coach7 from "../Images/coach7.jpg";
+import coach8 from "../Images/coach8.jpg";
+import coach9 from "../Images/coach9.jpg";
+import coach10 from "../Images/coach10.jpg";
+import coach11 from "../Images/coach11.jpg";
+import coach12 from "../Images/coach12.jpg";
+import coach13 from "../Images/coach13.jpg";
+import coach14 from "../Images/coach14.jpg";
+import coach15 from "../Images/coach15.jpg";
+import blogTrene2 from "../Images/blogTrene2.jpg";
+import blogTrene3 from "../Images/blogTrene3.jpeg";
+import blogTrene4 from "../Images/blogTrene4.jpg";
+// import blogTrene5 from "../Images/blogTrene5.jpg";
+import blogTrene6 from "../Images/blogTrene6.jpg";
+import blogTrene7 from "../Images/blogTrene7.jpg";
+import blogTrene8 from "../Images/blogTrene8.jpg";
+import blogTrene9 from "../Images/blogTrene9.jpg";
+import blogTrene10 from "../Images/blogTrene10.jpg";
 
 export const stateImage = {
   blog: {
@@ -78,6 +102,15 @@ export const stateImage = {
     blog2,
     blog3,
     blog4,
+    blogTrene2,
+    blogTrene3,
+    blogTrene4,
+    // blogTrene5,
+    blogTrene6,
+    blogTrene7,
+    blogTrene8,
+    blogTrene9,
+    blogTrene10,
   },
   photoGymHolodka: [
     pg111,
@@ -119,6 +152,36 @@ export const stateImage = {
     pgSaltovka7,
     pgSaltovka8,
   ],
+  scrgym: [
+    scrgym1,
+    scrgym2,
+    scrgym3,
+    scrgym4,
+    scrgym5,
+    scrgym6,
+    scrgym7,
+    scrgym8,
+    scrgym9,
+    scrgym10,
+    scrgym11,
+  ],
+  coaches: [
+    coach1,
+    coach2,
+    coach3,
+    coach4,
+    coach5,
+    coach6,
+    coach7,
+    coach8,
+    coach9,
+    coach10,
+    coach11,
+    coach12,
+    coach13,
+    coach14,
+    coach15,
+  ],
   edit1,
   edit2,
   threeDots,
@@ -142,17 +205,4 @@ export const stateImage = {
   coach1,
   checkMark,
   marker,
-  scrgym: [
-    scrgym1,
-    scrgym2,
-    scrgym3,
-    scrgym4,
-    scrgym5,
-    scrgym6,
-    scrgym7,
-    scrgym8,
-    scrgym9,
-    scrgym10,
-    scrgym11,
-  ],
 };

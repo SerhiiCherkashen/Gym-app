@@ -25,7 +25,14 @@ const BlogPage = () => {
         {stateConst.blogInformation.map((element, index) => {
           return (
             <div className={blogP.wrapOneBlog}>
-              <img src={element.image} />
+              <img
+                style={{
+                  border: colorLink === index && "6px solid orange",
+                }}
+                onMouseEnter={() => handleMouseEnter(index)}
+                onMouseLeave={handleMouseLeave}
+                src={element.image}
+              />
               <div className={blogP.dateHashtag}>
                 <div className={`    ${blogP.dateHash} ${blogP.gray} `}>
                   {element.date}

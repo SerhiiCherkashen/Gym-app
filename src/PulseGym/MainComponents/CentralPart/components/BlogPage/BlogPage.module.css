@@ -13,21 +13,26 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1300px;
+  width: 1500px;
   display: flex;
   flex-wrap: wrap;
 }
 .wrapOneBlog {
-  /* width: 300px;
-  height: 200px; */
+  /* background-color: aliceblue; */
+  width: 400px;
+  /* height: 400px; */
   margin: 30px;
 }
 .wrapOneBlog img {
   width: 100%;
+  height: 300px;
+  /* width: 200px; */
+  border: 6px solid rgb(0, 0, 0, 0);
   border-radius: 40px;
 }
+
 .dateHashtag {
-  width: 200px;
+  width: 400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,10 +64,18 @@
 }
 .link {
   text-decoration: none;
-  color: orange;
+  color: black;
   font-weight: 500;
 }
 
 .linkHovered {
-  font-size: 22px;
+  /* font-size: 22px; */
+  color: orange;
+}
+
+.wrapOneBlog :hover img {
+  border: 6px solid orange;
+}
+.imgHover {
+  border: 6px solid orange;
 }

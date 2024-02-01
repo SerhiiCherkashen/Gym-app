@@ -20,10 +20,24 @@
   flex-wrap: wrap;
 }
 .wrapOneCoach {
+  /* background-color: wheat; */
+  width: 270px;
   margin: 30px;
 }
+.wrapOneCoach img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 270px;
+  border-radius: 30px;
+}
 .text {
-  text-align: start;
+  /* width: 300px; */
+  height: 40px;
   font-size: 20px;
   font-weight: 500;
+}
+.description {
+  text-align: start;
+  font-size: 10px;
 }

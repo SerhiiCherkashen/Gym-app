@@ -2,7 +2,9 @@
   background-color: aqua;
 } */
 .wrap {
-  background-color: white;
+  background-color: rgb(224, 224, 224);
+  /* margin-bottom: 100px; */
+  padding-bottom: 100px;
 }
 .hr {
   color: black;
@@ -14,4 +16,11 @@
 }
 line {
   color: black;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+.link :hover {
+  color: orange;
 }

@@ -36,15 +36,15 @@ const MainPage = () => {
               stateConst.gyms[14].coordinates,
               stateConst.gyms[15].coordinates,
             ]}
-            center={stateConst.gyms[0].coordinates}
+            center={stateConst.gyms[12].coordinates}
             zoom={11}
             // borderRadius={"50px"}
           />
         </div>
         <WhyExactly />
-        <div>
+        {/* <div>
           <ImagesScroll />
-        </div>
+        </div> */}
       </div>
     </div>
   );

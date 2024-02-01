@@ -15,18 +15,6 @@ const Marquee = () => {
           <p className={marquee.marqueeText}>-- PULSE GYM---------</p>
           <p className={marquee.marqueeText}>-- PULSE GYM---------</p>
           <p className={marquee.marqueeText}>-- PULSE GYM---------</p>
-          {/* <p className={marquee.marqueeText}>
-            ---11111111--- ---11111111--- ---11111111--- ---11111111---
-            ---11111111--- ---11111111--- ---11111111--- ---11111111---
-            ---11111111--- ---11111111---
-          </p>
-          <p className={marquee.marqueeText}>
-            ---2222222--- ---2222222--- ---2222222--- ---2222222---
-            ---2222222--- ---2222222--- ---2222222--- ---2222222---
-            ---2222222---
-          </p> */}
-
-          {/* PULSE GYM СЕТЬ СПОРТИВНЫХ КЛУБОВ В ХАРЬКОВЕ */}
         </div>
       </div>
     </div>

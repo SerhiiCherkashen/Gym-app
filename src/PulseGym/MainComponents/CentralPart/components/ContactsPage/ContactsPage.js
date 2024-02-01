@@ -7,7 +7,6 @@ import { useSelector } from "react-redux";
 const ContactsPage = () => {
   return (
     <div className={contactsP.text}>
-      <h1>ContactsPage</h1>
       <BlackLine
         leftContext={"Contacts"}
         rightContext={"Watch all contacts on map "}

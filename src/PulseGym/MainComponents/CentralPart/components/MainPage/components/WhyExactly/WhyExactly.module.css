@@ -31,3 +31,12 @@ h5 {
   /* margin-left: 20px; */
   /* margin-right: 20px; */
 }
+.link {
+  text-decoration: none;
+  font-weight: 900;
+  color: rgba(255, 166, 0, 0.904);
+}
+.link :hover {
+  color: rgb(255, 166, 0);
+  font-size: 33px;
+}

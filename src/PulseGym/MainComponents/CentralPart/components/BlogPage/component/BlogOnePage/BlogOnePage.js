@@ -13,11 +13,14 @@ const BlogOnePage = () => {
         leftContext={"BlogOnePage"}
         rightContext={"Watch all contacts on map "}
       />
-      <h1>BlogOnePage</h1>
-      <div>
-        <div>{stateConst.blogInformation[blogIndex].thema}</div>
-        <img src={stateConst.blogInformation[blogIndex].image} />
-        <div>{stateConst.blogInformation[blogIndex].text}</div>
+      <div className={blogOP.container}>
+        <div className={blogOP.textImg}>
+          <div>{stateConst.blogInformation[blogIndex].thema}</div>
+          <img src={stateConst.blogInformation[blogIndex].image} />
+        </div>
+        <div className={blogOP.text}>
+          {stateConst.blogInformation[blogIndex].text}
+        </div>
       </div>
     </div>
   );

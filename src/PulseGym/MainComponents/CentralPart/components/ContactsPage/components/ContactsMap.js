@@ -10,7 +10,6 @@ const ContactsMap = () => {
   const dispatch = useDispatch();
   return (
     <div className={contactsMap.text}>
-      <h1>ContactsMap</h1>
       <div>
         {stateConst.gyms.map((element) => {
           return (

@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import whyExactly from "./WhyExactly.module.css";
 import { stateConst } from "../../../../../../BusinesaLogik/State/StateConst";
 import { Link } from "react-router-dom";
 
 const WhyExactly = () => {
+  // const [colorLink, setColorLink] = useState(false);
   return (
     <div>
-      <h1 className={whyExactly.whyExactly}>WhyExactly</h1>
       <div className={whyExactly.header}>
         <div className={whyExactly.bigText}>ПОЧЕМУ ИМЕННО PULSE GYM?</div>
-        <Link to="/clubsPage">
+        <Link className={whyExactly.link} to="/clubsPage">
           <div className={whyExactly.rightText}>ВЫБРАТЬ КЛУБ</div>
         </Link>
       </div>

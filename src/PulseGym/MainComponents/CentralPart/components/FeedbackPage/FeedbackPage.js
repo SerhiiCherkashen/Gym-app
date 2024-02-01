@@ -10,6 +10,7 @@ const FeedbackPage = () => {
   const dispatch = useDispatch();
   const { feedback } = useSelector((state) => state.feedbackReducer);
   // const { feedback } = useSelector((state) => state.gymReducer);
+  // console.log("data : ", new Date());
   return (
     <div>
       {/* <h1 className={feedbackP.text}>FeedbackPage</h1>{" "} */}
@@ -18,7 +19,7 @@ const FeedbackPage = () => {
         rightContext={"Send your feedback "}
       />
       <div className={feedbackP.addFeedback}>
-        <button onClick={() => dispatch(openPopup())}>Открыть окно</button>
+        <button onClick={() => dispatch(openPopup())}>Add Feedback</button>
         <PopUpWindow />
       </div>
       <div className={feedbackP.container}>
@@ -31,7 +32,7 @@ const FeedbackPage = () => {
                   <div className={feedbackP.text}>{element.name} </div>
                   <div className={feedbackP.text}>{element.address} </div>
                 </div>
-                <div className={feedbackP.text}>Data</div>
+                <div className={feedbackP.text}>{"Date"}</div>
               </div>
               <div className={feedbackP.text}>{element.text}</div>
               <div className={feedbackP.orangeLine}></div>

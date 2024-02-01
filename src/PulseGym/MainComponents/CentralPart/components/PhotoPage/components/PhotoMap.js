@@ -10,7 +10,6 @@ const PhotoMap = () => {
   const dispatch = useDispatch();
   return (
     <div>
-      <h1>PhotoMap</h1>
       <div className={photoMap.photoMap}>
         {stateConst.gyms.map((element, index) => {
           return (
